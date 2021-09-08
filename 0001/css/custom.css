@@ -1,0 +1,109 @@
+.btn-custom {
+  color: #fff;
+  border-color: #fff;
+  border-radius: 0;
+}
+
+.masthead {
+  background: linear-gradient(0deg, #040404 0%, #242424 100%) !important;
+  padding: 0 !important;
+}
+.masthead-content {
+  height: 100%;
+}
+.masthead-content .col {
+  padding: 0;
+}
+.masthead-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.masthead-description .wrapper {
+  max-width: 85%;
+  text-align: center;
+}
+.masthead-description .masthead-heading {
+  font-size: 1.5rem !important;
+}
+.masthead-description .masthead-subheading {
+  font-size: 0.85rem !important;
+}
+.masthead-description .btn {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  transition: 0.25s;
+}
+.masthead-description .btn:hover {
+  color: #fff;
+  border-color: #ddd;
+  box-shadow: 0 0 0 0.25rem rgb(238 9 121 / 25%);
+}
+@media (min-width: 576px) {
+  .masthead-description .masthead-heading {
+    font-size: 2rem !important;
+  }
+  .masthead-description .masthead-subheading {
+    font-size: 1.25rem !important;
+  }
+  .masthead-description .btn {
+    margin-top: 1.5rem;
+    padding: 1rem 2.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .masthead-description .masthead-heading {
+    font-size: 2.5rem !important;
+  }
+  .masthead-description .masthead-subheading {
+    font-size: 1.35rem !important;
+  }
+  .masthead-description .btn {
+    margin-top: 1.75rem;
+    padding: 1rem 2.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  .masthead-description .masthead-heading {
+    font-size: 2.5rem !important;
+  }
+  .masthead-description .masthead-subheading {
+    font-size: 1.35rem !important;
+  }
+  .masthead-description .btn {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-top: 1.75rem;
+    padding: 1rem 2.25rem;
+  }
+}
+.masthead-description .waves {
+  position: absolute;
+  bottom: 10%;
+  transform: rotate(0deg);
+  transition: 0.3s;
+  z-index: -1;
+}
+.masthead-description .waves-block {
+  height: 10%;
+  width: 100%;
+  background-color: #151515;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+@media (max-width: 576px) {
+  .masthead-description .waves {
+    bottom: 15%;
+  }
+  .masthead-description .waves-block {
+    height: 15%;
+  }
+}
+.masthead-avatar {
+  width: 100%;
+}
