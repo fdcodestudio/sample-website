@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: 'development',
@@ -37,7 +38,15 @@ module.exports = {
         page: 'portfolio',
         projects: require('./src/json/projects.json')
       }
-    })
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: './src/collections',
+          to: 'collections'
+        }
+      ],
+    }),
   ],
   module: {
     rules: [
