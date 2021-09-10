@@ -1,0 +1,84 @@
+<%- include partials/header %>
+
+
+
+<section id="home" class="scrollspy">
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="images/web-design.jpg" alt="Web Design">
+        <div class="caption right-align grey-text text-lighten-4">
+          <h4>Jasa Pembuatan Website</h4>
+          <h6 class="light grey-text text-lighten-3">FD Code Studio merupakan tim developer yang bergerak dibidang teknologi informasi. Kami hadir untuk membantu Anda dalam mengembangkan bisnis secara online melalui website.</h6>
+          <a href="https://api.whatsapp.com/send?phone=6282362361344&text=Halo%20kak%2C%20saya%20ingin%20" class="btn text-transform-none"><i class="fas fa-coffee left"></i>Konsultasi Gratis</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="why-website" class="section scrollspy grey lighten-5">
+  <div class="container">
+    <div class="center-align">
+      <h4 class="section-header mb-3">Mengapa Anda Perlu Website?</h4>
+      <p>Sebuah survey yang dilakukan oleh Verisign, perusahaan nama domain dan keamanan internet, menunjukkan 84% customer percaya bahwa bisnis yang memiliki website lebih kredibel daripada bisnis yang hanya memiliki halaman media sosial. Mengapa demikian? Karena website tidak hanya membantu Anda membangun online presence tetapi juga brand awareness yang lebih kuat, sehingga akan memberikan kesan positif bahwa bisnis Anda lebih profesional dan lebih sukses.</p>
+    </div>
+  </div>
+</section>
+
+<!-- <section id="why-us" class="section scrollspy grey lighten-5"></section> -->
+
+<section id="package" class="section scrollspy">
+  <div class="container">
+    <div class="center-align">
+      <h4 class="section-header">Paket Website</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <% Object.values(htmlWebpackPlugin.options.data.packages).forEach(item => { %>
+      <div class="col l4 offset-l4 m6 offset-m3 s12">
+        <div class="card-panel">
+          <div class="center-align">
+            <img src="images/packages/<%= item.icon %>" alt="<%= item.name %>">
+            <h5 class="mt-1"><%= item.name %></h5>
+            <a href="https://api.whatsapp.com/send?phone=6282362361344&text=Halo%20kak%2C%20saya%20ingin%20memesan%20paket%20website%20reguler%2E" class="btn">Order Sekarang</a>
+          </div>
+
+          <div style="display: flex; justify-content: center;">
+            <ul>
+              <% item.features.forEach(item => { %>
+                <li><i class="fas fa-chevron-right"></i><%= item %></li>
+              <% }) %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</section>
+
+<section id="faq" class="section scrollspy grey lighten-5">
+  <div class="container">
+    <div class="center-align">
+      <h4 class="section-header">Frequently Asked Questions</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <ul class="collapsible">
+      <% Object.values(htmlWebpackPlugin.options.data.faq).forEach(item => { %>
+        <li>
+          <div class="collapsible-header"><i class="fas fa-plus"></i><i class="fas fa-minus"></i><%= item.question %></div>
+          <div class="collapsible-body"><%= item.answer %></div>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</section>
+
+
+
+<%- include partials/footer %>
