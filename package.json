@@ -1,0 +1,20 @@
+{
+  "name": "sample-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdcodestudio/sample-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdcodestudio/sample-website/issues"
+  },
+  "homepage": "https://github.com/fdcodestudio/sample-website#readme"
+}
